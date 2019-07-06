@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2596844964247161925}
   - component: {fileID: 2596844964247161924}
   - component: {fileID: 2596844964247161927}
+  - component: {fileID: 7341254171046756627}
+  - component: {fileID: 7393386865227542685}
   - component: {fileID: 1205480408}
   m_Layer: 8
   m_Name: MyBase
@@ -166,7 +168,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1205480408
+--- !u!114 &7341254171046756627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,6 +176,47 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2596844964247161929}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0bd552023a684a72868899c47902511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterHeightOffset: 0.2
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  rig2d: {fileID: 0}
+  hp: 4
+--- !u!114 &7393386865227542685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596844964247161929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b0f587fe4a449bea6cfeb52b11ad35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Speed: 12
+  m_TurnSpeed: 180
+  m_PitchRange: 0.2
+  m_MovementAudio: {fileID: 0}
+  m_EngineIdling: {fileID: 0}
+  m_EngineDriving: {fileID: 0}
+  m_LeftDustTrail: {fileID: 0}
+  m_RightDustTrail: {fileID: 0}
+  m_Rigidbody: {fileID: 0}
+--- !u!114 &1205480408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596844964247161929}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4838ef0bf73191479e9bf0bdf015034, type: 3}
   m_Name: 
