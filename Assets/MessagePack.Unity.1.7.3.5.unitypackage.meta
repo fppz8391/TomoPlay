@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/MessagePack.Unity.1.7.3.5.unitypackage.meta
 guid: 6a487c18406c24ece849b840c8aa3957
+=======
+guid: 1387ef63b89c44f73994ff3e2a1107f4
+folderAsset: yes
+>>>>>>> 860482cdf6f7e7c2b139f090668036bc1f035a6d:Assets/Animations.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4868427743921028172
+--- !u!1001 &2686464397180075974
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,12 +10,17 @@ PrefabInstance:
     - target: {fileID: 2596844964247161929, guid: 80a60e2622356a04d9b3d2b2426ca14f,
         type: 3}
       propertyPath: m_Name
-      value: P2
+      value: P1
       objectReference: {fileID: 0}
     - target: {fileID: 2596844964247161929, guid: 80a60e2622356a04d9b3d2b2426ca14f,
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596844964247161927, guid: 80a60e2622356a04d9b3d2b2426ca14f,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2596844964247161920, guid: 80a60e2622356a04d9b3d2b2426ca14f,
         type: 3}
@@ -72,11 +77,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2596844964247161922, guid: 80a60e2622356a04d9b3d2b2426ca14f,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: f609eced5a247574a84397909f8d2018,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80a60e2622356a04d9b3d2b2426ca14f, type: 3}

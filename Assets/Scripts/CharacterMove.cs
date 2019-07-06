@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CharacterMove : MonoBehaviour
 {
@@ -18,7 +19,6 @@ public class CharacterMove : MonoBehaviour
 	[SerializeField, HideInInspector]SpriteRenderer spriteRenderer;
 	[SerializeField, HideInInspector]Rigidbody2D rig2d;
 
-	public int hp = 4;
 
 	void Awake ()
 	{
@@ -43,10 +43,10 @@ public class CharacterMove : MonoBehaviour
 		{
 			velocity.x=velocity.y=0;
 		}
-        rig2d.velocity = velocity;
-
-
-		
+		if(GameManger.Instance.userCanMove){
+			rig2d.velocity = velocity;
+		}
+	
 		animator.SetFloat (hashSpeed, Mathf.Abs (velocity.magnitude));
 
 	}
@@ -56,4 +56,9 @@ public class CharacterMove : MonoBehaviour
     {
         animator.SetTrigger(hashDamage);  
     }
+
+	public void moveToByAnima(Vector3 target,float t){
+		GameManger.Instance.userCanMove=false;
+		transform.DOMove(target,t).OnComplete(()=>{GameManger.Instance.userCanMove=true;});
+	}
 }
